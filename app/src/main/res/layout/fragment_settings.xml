@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#253348"
+    android:scrollbars="horizontal|vertical"
+    tools:context=".ui.fragments.SettingsFragment">
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:scrollbars="horizontal|vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:fontFamily="sans-serif"
+            android:paddingStart="10dp"
+            android:text="Para Birimi Seç"
+            android:textAlignment="center"
+            android:textColor="#D5FFFFFF"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:buttonTint="#DA3BCCDF"
+            android:layout_marginTop="10dp"
+            android:text="Türk Lirası (TRY)"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:buttonTint="#DA3BCCDF"
+            android:text="Amerikan Doları (USD)"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:buttonTint="#DA3BCCDF"
+            android:text="Euro (EUR)"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:buttonTint="#DA3BCCDF"
+            android:text="İngiliz Pound (GBP)"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/signedInUserText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logOutButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Log out"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:cardBackgroundColor="#DA3BCCDF"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:id="@+id/logOutButton"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Log out"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

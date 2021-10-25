@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253348">
+
+
+    <TableLayout
+        android:id="@+id/tableLayout0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/coinImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/coinName"
+                android:layout_width="58dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginStart="5dp"
+                android:layout_span="2"
+                android:maxWidth="220dp"
+                android:text=""
+
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:autoSizeTextType="uniform" />
+
+
+            <ImageButton
+                android:id="@+id/addFavButton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:background="#00FFFFFF"
+
+                android:gravity="bottom"
+
+
+                android:onClick="onAddFavButtonClick"
+                android:scaleType="fitCenter"
+
+                android:src="@drawable/ic_star"
+                android:text="24h"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_empty4"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/coinPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:text=""
+
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/priceChange"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="8dp"
+
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                tools:text="" />
+
+            <TextView
+                android:id="@+id/priceChange24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+
+                android:fontFamily="sans-serif-medium"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"
+                tools:text="" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#10162B" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="Refresh Interval"
+                android:textAlignment="center"
+                android:textColor="#BEBEBE"
+
+                android:textSize="13sp"
+                app:autoSizeTextType="uniform" />
+
+
+            <TextView
+                android:id="@+id/label2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="2"
+                android:text="Hashing Algorithm"
+                android:textAlignment="center"
+                android:textColor="#BEBEBE"
+
+                android:textSize="12sp"
+                app:autoSizeTextType="uniform" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/refreshInterval"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="3dp"
+
+                android:layout_weight="1"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+
+
+            <TextView
+                android:id="@+id/hashingAlgorithm"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="2"
+                android:maxWidth="90dp"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeTextType="uniform"/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/label4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="1s Değişim"
+                android:textAlignment="center"
+                android:textColor="#BEBEBE"
+
+                android:textSize="14sp"
+                app:autoSizeTextType="uniform" />
+
+
+            <TextView
+                android:id="@+id/label5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="24s Değişim"
+                android:textAlignment="center"
+                android:textColor="#BEBEBE"
+
+                android:textSize="14sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/label6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="7g Değişim"
+                android:textAlignment="center"
+                android:textColor="#BEBEBE"
+
+                android:textSize="14sp"
+                app:autoSizeTextType="uniform" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/oneHourChange"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+
+                android:textSize="19sp"
+
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/oneDayChange"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+
+
+                android:textStyle="bold"
+         />
+
+            <TextView
+                android:id="@+id/oneWeekChange"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"
+
+
+                android:textStyle="bold"
+                />
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="#10162B" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="#10162B" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Description"
+        android:textAlignment="center"
+        android:textColor="#BEBEBE"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:layout_gravity="center_vertical"
+
+        android:layout_weight="1"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:paddingTop="2dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp"
+        android:scrollbars = "vertical"
+        android:textSize="17sp"
+        android:textStyle="bold"
+       />
+
+
+</LinearLayout>
